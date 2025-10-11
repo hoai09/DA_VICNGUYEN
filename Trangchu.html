@@ -95,16 +95,24 @@
   </head>
   <body>
     <header class="main-header navbar navbar-expand-lg sticky-top">
-        <div
-          class="container main-header__wrapper d-flex flex-column justify-content-center align-items-center"
-        >
-          <a href="./home.html" class="main-header__logo-link mb-4">
-            <img
-              src="./assets/img/logo.svg"
-              alt="VICNGUYEN"
-              class="main-header__logo"
+    <div class="container main-header__wrapper"> <a href="./index.html" class="main-header__logo-link mb-lg-4"> <img
+                src="./assets/img/logo.svg"
+                alt="VICNGUYEN"
+                class="main-header__logo"
             />
-          </a>
+        </a>
+
+        <button 
+            class="navbar-toggler d-lg-none" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#mainNavbar" 
+            aria-controls="mainNavbar" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
   
           <nav class="main-header__nav collapse navbar-collapse justify-content-center" id="mainNavbar">
             <div class="menu-main d-flex align-items-center">
@@ -271,6 +279,7 @@
           </div>
         </div>
       </main>
+  
   
       <footer
         class="main-footer d-flex flex-column align-items-center justify-content-center pt-0 pb-4"
