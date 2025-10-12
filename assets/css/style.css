@@ -169,6 +169,10 @@ body {
 }
 
 .gallery__grid {
+  margin-left: 1rem;
+}
+.gallery__item {
+  padding-left: 1rem;
 }
 
 .gallery__image {
@@ -199,7 +203,7 @@ body {
 }
 
 .pb-6 {
-  padding-bottom: 16.88rem;
+  padding-bottom: 13.6rem;
 }
 /* =========== FOOTER ============== */
 .main-footer {
