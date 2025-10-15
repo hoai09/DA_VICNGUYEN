@@ -15,7 +15,7 @@ a {
 }
 body {
   font-size: 1.6rem; /* 16px */
-  font-family: "Lato", Regular;
+  font-family: "Lato";
 }
 :root {
   --text-color-primary: #1f2024;
@@ -28,7 +28,6 @@ body {
 .splash {
   width: 100vw;
   height: 100vh;
-
   background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
@@ -38,7 +37,7 @@ body {
 
 .splash__content {
   position: absolute;
-  max-width: 1728px;
+  max-width: 100%;
   top: 4.3%;
   left: 50%;
   transform: translateX(-50%);
@@ -71,12 +70,27 @@ body {
 
 .splash__socials {
   position: absolute;
-  bottom: 34px;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 5.216rem;
-  display: flex;
+  gap: 1.5rem;
 }
+
+.splash__social-item {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.splash__social-icon {
+  color: #333;
+  font-size: 2rem;
+}
+.mt-10 {
+  margin-top: 90vh;
+}
+
 /* ============== HEADER ================= */
 .main-header {
   width: 100%;
@@ -112,7 +126,7 @@ body {
 
 .main-header__nav-link {
   padding: 1rem 1.4rem;
-  font-family: "Lato", Heavy;
+  font-family: "Lato";
   color: var(--primary-color);
   font-weight: 800;
   font-size: 1.6rem;
@@ -140,7 +154,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
-  font-family: "lato", Regulary;
+  font-family: "lato";
   color: var(--text-color-primary);
   padding: 0.8rem 2rem;
   text-align: center;
@@ -156,17 +170,11 @@ body {
 /* ============= GALLERY ================== */
 .main-gallery {
   background-color: #fff;
-  max-width: 1170px;
+  max-width: 100%;
   width: 80%;
   margin: 0 auto;
 }
 
-.gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
-  gap: 2rem;
-}
 .gallery__item {
   width: 100%;
 }
@@ -175,6 +183,9 @@ body {
   overflow: hidden;
   display: inline-block;
   position: relative;
+}
+.overlay__container {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .anh02 {
   position: relative;
@@ -188,6 +199,12 @@ body {
   z-index: 1030;
   margin-bottom: 0 !important;
 }
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
 
 .pb-6 {
   padding-bottom: 13.6rem;
@@ -200,25 +217,12 @@ body {
   transition: transform 0.3s ease;
 }
 
-.anh02__overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: rgba(0, 0, 0, 0.476);
-  z-index: 1020;
-  opacity: 1;
-}
-
 /* =========== FOOTER ============== */
 .main-footer {
+  max-width: 100%;
   min-height: 10.9rem;
   background-color: #ffffff;
-  border-top: 1px solid #eee;
+  border-top: 0.1rem solid #eee;
 }
 
 .main-footer__copyright {
@@ -234,8 +238,8 @@ body {
 
 .main-footer__social-item {
   display: flex;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: #71727a;
   justify-content: center;
@@ -244,7 +248,7 @@ body {
 
 .main-footer__social-icon {
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 /* ======================================================================================= */
 
@@ -256,7 +260,7 @@ body {
 .project-header__title {
   font-size: 2.4rem;
   font-weight: 600;
-  font-family: "Lato", Semibold;
+  font-family: "Lato";
   margin-bottom: 0;
   color: var(--text-color-primary);
 }
@@ -296,9 +300,6 @@ body {
 
 .info-block__value--completed {
   color: var(--highlight-color);
-}
-
-.project-intro__description {
 }
 
 .project-gallery {
@@ -426,9 +427,9 @@ body {
 /* ============== MODAL STYLES  ================= */
 .modal-dialog {
   width: 100%;
-  max-width: 1013px;
+  max-width: 101.3rem;
   height: 100%;
-  max-height: 671px;
+  max-height: 67.1rem;
 }
 .member-modal__image-col {
   background-color: white !important;
@@ -447,7 +448,7 @@ body {
 .member-modal__name {
   font-size: 2.2rem;
   font-weight: 600;
-  font-family: Semibol;
+  font-family: "Lato";
   text-transform: uppercase;
   color: #1f2024;
 }
@@ -540,7 +541,7 @@ body {
 
 .news-card__title {
   font-size: 1.8rem;
-  font-family: "Lato", Heavy;
+  font-family: "Lato";
   font-weight: 800;
   color: var(--text-color-primary, #1f2024);
   margin-bottom: 0.5rem;
@@ -608,7 +609,7 @@ body {
 .single-news__title {
   font-size: 2.8rem;
   font-weight: 600;
-  font-family: "Lato", SemiBold;
+  font-family: "Lato";
   color: var(--text-color-primary, #1f2024);
   line-height: 1.2;
   text-transform: uppercase;
@@ -644,7 +645,7 @@ body {
 .sidebar-box__title {
   font-size: 1.6rem;
   font-weight: 700;
-  font-family: "Lato", Bold;
+  font-family: "Lato";
   color: var(--text-color-primary);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -664,8 +665,8 @@ body {
 }
 
 .sidebar-news-item__thumb {
-  width: 70px;
-  height: 70px;
+  width: 7rem;
+  height: 7rem;
   overflow: hidden;
   flex-shrink: 0;
   border: 1px #eee;
@@ -686,7 +687,7 @@ body {
 .sidebar-news-item__title {
   font-size: 1.6rem;
   font-weight: 600;
-  font-family: "Lato", Semibold;
+  font-family: "Lato";
   line-height: 1.3;
   color: #555;
   margin: 0;
@@ -703,14 +704,14 @@ body {
 /* ============ADDRESS================= */
 
 .address-page {
-  padding-top: 20px;
-  padding-bottom: 245px;
+  padding-top: 2rem;
+  padding-bottom: 24.5rem;
 }
 
 .address__information {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 2.1rem;
   padding-right: 7.75%;
 }
 
@@ -720,10 +721,10 @@ body {
 }
 
 .address__intro img {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 0.2rem;
 }
 
 .address__content {
@@ -733,112 +734,49 @@ body {
   margin-bottom: 0;
 }
 /* =====================INFORMATION=============================== */
-.form-page-content-wrapper {
-  padding: 20px;
-}
 .form_stock_information {
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.top {
-  border-bottom: solid 1px #eeeeee;
 }
 .title_def {
   font-size: 2.2rem;
   font-weight: 600;
-  font-family: SemiBold;
+  font-family: "Lato";
 }
 .btn_frm_stock_info {
-  background-color: transparent;
-  border: 2px solid #333;
-  color: #333;
-  font-family: "lato", Regular;
-  padding: 8px 30px;
+  font-family: "lato";
   font-weight: 700;
-  text-transform: uppercase;
+  border-radius: 10%;
+  border: #d4d6dd solid 1px;
 }
 .btn_frm_stock_info:hover {
   background-color: #e84402;
   color: white;
 }
 
-.box-group {
-  width: 100%;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.box {
-  background-color: white;
-  padding: 20px;
-  flex: 1 1 48%;
-  min-width: 350px;
-  display: flex;
-  flex-direction: column;
-}
-
 .box .title {
   font-size: 1.8rem;
   font-weight: 700;
-  height: 24px;
-  font-family: "Lato", Bold;
-  margin-bottom: 15px;
-}
-
-.frm-group-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  width: 100%;
+  height: 2.4rem;
+  font-family: "Lato";
 }
 
 .frm-group-row label {
-  width: 472.5px;
-  flex-shrink: 0;
   font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 0;
   font-weight: 400;
-  font-family: "Lato", Regular;
+  font-family: "Lato";
 }
 
 .frm-group-row input,
 .frm-group-row textarea {
-  padding: 5px 10px;
-  border: 1px solid #eeeeee;
-  border-radius: 4px;
-  font-size: 1.6rem;
-  height: 52px;
-  background: #d4d6dd;
+  border: #d4d6dd solid 1px;
+  background: #eeeeee;
 }
 
-.frm-group-row textarea {
-  height: auto;
-  min-height: 35px;
-  resize: none;
-}
-
-.frm-group-row-split {
-  margin-bottom: 10px;
-}
-.frm-group-split {
-  flex: 1;
-}
 .frm-group-split input {
-  border: 1px solid #eeeeee;
-  background: #d4d6dd;
-  border-radius: 4px;
+  border: #d4d6dd solid 1px;
+  background: #eeeeee;
 }
-
-.frm-group-split label {
-  display: block;
-  width: auto;
-  margin-bottom: 5px;
-}
-.frm-group-split input {
-  height: 35px;
-}
-.infomation-mobile {
-  margin-right: 3%;
+.img {
+  width: 100%;
+  height: 100%;
 }
