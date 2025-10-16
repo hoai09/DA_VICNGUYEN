@@ -68,6 +68,10 @@ body {
   transform: translateX(-50%);
 }
 
+.btn {
+  font-size: xx-large;
+}
+
 .splash__socials {
   position: absolute;
   gap: 1.5rem;
@@ -87,6 +91,9 @@ body {
   color: #333;
   font-size: 2rem;
 }
+.splash__footer {
+  gap: 2rem;
+}
 .mt-10 {
   margin-top: 90vh;
 }
@@ -99,14 +106,14 @@ body {
   margin-right: auto;
   z-index: 100;
   background-color: #fff !important;
-  padding-bottom: 5.5rem;
+  padding-bottom: 5rem;
 }
 
 /* ================= */
 .main-header__wrapper {
   width: 100%;
   flex-direction: column;
-  padding-top: 5rem;
+  padding: 4rem 0rem;
   gap: 3rem;
 }
 .navbar-toggler {
@@ -171,8 +178,6 @@ body {
 .main-gallery {
   background-color: #fff;
   max-width: 100%;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .gallery__item {
@@ -736,6 +741,9 @@ body {
 /* =====================INFORMATION=============================== */
 .form_stock_information {
   width: 100%;
+}
+.form-control {
+  font-size: 1.6rem;
 }
 .title_def {
   font-size: 2.2rem;

@@ -14,25 +14,30 @@
   .menu-main {
     display: none;
   }
-
+  .main-header__sub-link.dropdown-item {
+    font-size: 2.6rem;
+    line-height: 4.3rem;
+  }
   .main-header {
     position: relative;
   }
-
+  .main-header__nav-link {
+    font-size: 3.9rem;
+  }
   .logo {
     position: absolute;
-    margin-left: 54px;
-    margin-top: -9px;
+    margin-left: 22.8rem;
+    margin-top: 5.3rem;
     transform: translate(-50%, -50%);
-    width: 120px;
+    width: 36.9rem;
   }
 
   .menu-header__iconmenu {
     position: absolute;
-    top: 66px;
-    left: 79px;
+    top: 5.2rem;
+    left: 7.9rem;
     color: black;
-    width: 50px;
+    width: 5rem;
     z-index: 1050;
   }
 
@@ -54,7 +59,7 @@
   .menu-drawer {
     position: fixed;
     background-color: #fff;
-    inset: 0 70% 0 0;
+    inset: 0 30% 0 0;
     z-index: 1052;
     transform: translateX(-100%);
     transition: 0.5s;
@@ -65,9 +70,9 @@
   }
 
   .close__menu {
-    margin-top: -48px;
-    margin-left: 182px;
-    width: 29px;
+    margin-top: -2.4rem;
+    margin-left: -2.3rem;
+    width: 6.8rem;
     color: #0b0b0b4d;
   }
 
@@ -77,8 +82,8 @@
     align-items: center;
   }
   #menu__list--mobile {
-    margin-top: 17px;
-    margin-left: -53px;
+    margin-top: 17.2rem;
+    margin-left: 1.2rem;
   }
 
   .sub-menu.dropdown-menu {
@@ -87,7 +92,8 @@
   }
 
   .sub-menu.dropdown-menu {
-    left: 79% !important;
+    left: 69% !important;
+    width: fit-content;
   }
 }
 
@@ -95,40 +101,49 @@
 @media (max-width: 767.68px) {
   .menu-header__iconmenu {
     position: absolute;
-    top: 61px;
-    left: 4px;
+    top: 5rem;
+    left: 0.4rem;
     color: black;
-    width: 50px;
+    width: 5rem;
     z-index: 1050;
   }
-
+  .main-header__nav-link {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
   .main-header__sub-link.dropdown-item {
-    font-size: 0.8rem;
-    line-height: 0.3rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
   }
 
   .sub-menu.dropdown-menu {
-    width: 10%;
+    width: fit-content;
   }
   /* ================================= */
   .logo {
     position: absolute;
-    margin-left: 33px;
-    margin-top: -4px;
+    margin: 3.4rem 9.6rem 0;
     transform: translate(-50%, -50%);
-    width: 47px;
+    width: 14.3rem;
   }
   .menu-drawer {
-    padding: 14px;
+    padding: 1.4rem;
   }
 
   .close__menu {
-    margin-top: -34px;
-    margin-left: 83px;
-    width: 16px;
-    color: #0b0b0b4d;
+    margin-top: -7px;
+    margin-left: -1.2rem;
+    width: 3.6rem;
+    color: #0b0b0b;
   }
   #menu__list--mobile {
-    margin-left: -37px;
+    margin-left: -1.5rem;
+    margin-top: 9.3rem;
   }
+  .main-header {
+    position: relative;
+    padding-bottom: 0rem;
+  }
+}
+@media (max-width: 575.68px) {
 }
