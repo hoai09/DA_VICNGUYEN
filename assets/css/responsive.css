@@ -26,10 +26,10 @@
   }
   .logo {
     position: absolute;
-    margin-left: 22.8rem;
+    margin-left: 20.8rem;
     margin-top: 5.3rem;
     transform: translate(-50%, -50%);
-    width: 36.9rem;
+    width: 35.9rem;
   }
 
   .menu-header__iconmenu {
@@ -96,7 +96,7 @@
     width: fit-content;
   }
 }
-
+/* Ta */
 /* Mobile*/
 @media (max-width: 767.68px) {
   .menu-header__iconmenu {
@@ -139,10 +139,6 @@
   #menu__list--mobile {
     margin-left: -1.5rem;
     margin-top: 9.3rem;
-  }
-  .main-header {
-    position: relative;
-    padding-bottom: 0rem;
   }
 }
 @media (max-width: 575.68px) {
