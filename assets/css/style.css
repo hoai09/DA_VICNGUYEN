@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 body {
-  font-size: 1.6rem; /* 16px */
+  font-size: 1.6rem;
   font-family: "Lato";
 }
 :root {
@@ -109,30 +109,39 @@ body {
   z-index: 100;
   background-color: #fff !important;
 }
-
-/* ================= */
-.main-header__wrapper {
-  width: 100%;
-  flex-direction: column;
-  padding: 4rem 0rem;
-  gap: 3rem;
-}
 .navbar-toggler {
-  display: none;
+  color: #000;
+  border: none;
+  position: relative;
+  z-index: 1053;
+  outline: none;
 }
 
 .main-header__logo {
-  width: 24.6rem;
-  height: 6.1rem;
+  height: 60px;
+  object-fit: contain;
 }
-.main-header__nav {
+
+/* ================= */
+.main-header .main-header__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  gap: 3rem;
+}
+.main-header .main-header__logo {
+  max-height: 5rem;
+}
+.main-header .main-header__nav {
   padding-bottom: 2rem;
 }
-.main-header__nav-list {
+.main-header .main-header__nav-list {
+  display: flex;
   gap: 2.4rem;
 }
 
-.main-header__nav-link {
+.main-header .nav-link {
   padding: 1rem 1.4rem;
   font-family: "Lato";
   color: var(--primary-color);
@@ -142,23 +151,15 @@ body {
   transition: color 0.3s, font-weight 0.3s;
 }
 
-.main-header__nav-link:hover,
-.main-header__nav-link.active,
-.main-header__nav-item.current-menu-item > .main-header__nav-link {
-  color: red;
+.nav-link:hover,
+.nav-link.active,
+.nav-item.current-menu-item > .nav-link {
+  color: red !important;
   font-weight: 800;
 }
 /* ===== */
-.sub-menu.dropdown-menu {
-  border: 1px solid #eee;
-  padding: 1rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  z-index: 1010;
-  overflow: visible;
-}
-.main-header__sub-link.dropdown-item {
+
+.dropdown-item {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -168,10 +169,10 @@ body {
   text-align: center;
   transition: background-color 0.2s;
 }
-.main-header__sub-link.dropdown-item:hover,
-.main-header__sub-link.dropdown-item:active {
+.dropdown-item:hover,
+.dropdown-item:active {
   background-color: #f7f7f7;
-  color: var(--hover-color);
+  color: var(--hover-color) !important;
   font-weight: 800;
 }
 
