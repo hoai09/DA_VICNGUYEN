@@ -377,10 +377,6 @@ body {
   margin-left: -1.5em;
 }
 /* ======================MEMBER============= */
-.members-page {
-  padding-top: 8rem !important;
-  padding-bottom: 8rem !important;
-}
 
 .member-card {
   cursor: pointer;
