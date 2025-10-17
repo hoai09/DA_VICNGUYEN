@@ -99,12 +99,16 @@
 /* Ta */
 /* Mobile*/
 @media (max-width: 767.68px) {
+  .main-header__logo {
+    width: 20.6rem;
+    height: 6.1rem;
+  }
   .menu-header__iconmenu {
     position: absolute;
-    top: 5rem;
-    left: 0.4rem;
+    top: 1rem;
+    left: 0.6rem;
     color: black;
-    width: 5rem;
+    width: 4rem;
     z-index: 1050;
   }
   .main-header__nav-link {
@@ -119,6 +123,7 @@
   .sub-menu.dropdown-menu {
     width: fit-content;
   }
+
   /* ================================= */
   .logo {
     position: absolute;

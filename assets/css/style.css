@@ -70,7 +70,8 @@ body {
 }
 
 .btn {
-  font-size: xx-large;
+  font-size: 2rem;
+  padding: 1.2rem 2rem;
 }
 
 .splash__socials {
@@ -258,8 +259,8 @@ body {
 /* ======================================================================================= */
 
 .project-header {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .project-header__title {
@@ -305,11 +306,6 @@ body {
 
 .info-block__value--completed {
   color: var(--highlight-color);
-}
-
-.project-gallery {
-  padding-top: 7rem;
-  padding-bottom: 8rem;
 }
 
 .gallery__item {
