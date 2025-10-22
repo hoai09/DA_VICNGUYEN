@@ -3410,7 +3410,7 @@ body {
   color: #000;
   font-size: 22px;
   top: 78px;
-  text-shadow: -1px 1px 0px #9f9898;
+  text-shadow: 0px 1px 0px #c1d8c1f0;
 }
 .top .slogan .slogan__content {
   bottom: 0;
@@ -4413,7 +4413,7 @@ img.lazy {
     margin-right: 0;
   }
   .top .slogan p {
-    font-size: 19px;
+    font-size: 18px;
   }
   .top .slogan #logo img {
     width: 13%;
@@ -4475,7 +4475,7 @@ img.lazy {
     width: 100%;
   }
   .top .slogan p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .top .slogan #logo img {
     transform: translateX(26px);
@@ -4522,7 +4522,7 @@ img.lazy {
     width: 40%;
   }
   .top .slogan p {
-    font-size: 10px;
+    font-size: 9px;
   }
   .top .slogan #logo img {
     transform: translateX(48px);
@@ -4543,6 +4543,7 @@ img.lazy {
   .top .slogan p {
     font-size: 9px;
     margin-left: 100px;
+    line-height: 27px;
   }
   .top .slogan #logo {
     transform: translateY(-34px);
@@ -4550,6 +4551,19 @@ img.lazy {
   .slogan #logo img {
     width: 23%;
     transform: translateX(34px);
+  }
+}
+@media screen and (max-width: 390px) {
+  .top .slogan p {
+    font-size: 8px;
+    margin-left: 82px;
+    line-height: 20px;
+  }
+  .top .slogan #logo img {
+    transform: translateX(36px);
+  }
+  .top .slogan #logo {
+    transform: translateY(-46px);
   }
 }
 @media screen and (max-width: 380px) {
@@ -4573,7 +4587,7 @@ img.lazy {
     padding: 0 3px;
   }
   .top .slogan p {
-    font-size: 8px;
+    font-size: 7px;
     margin-left: 83px;
     line-height: 18px;
   }
