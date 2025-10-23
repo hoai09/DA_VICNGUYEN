@@ -90,3 +90,41 @@
     background: none;
   }
 }
+@media screen and (max-width: 800px) {
+  .address__image img {
+    transform: translate(18px, 50px);
+  }
+  .address__information {
+    transform: translate(19px, 10px);
+  }
+  .address__content {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 768px) {
+  .address__image img {
+    transform: translate(13px, 50px);
+  }
+  .address__information {
+    transform: translate(50px, 10px);
+  }
+  .address__content {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .address__image img {
+    transform: translate(19px, 50px);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .frm-group-row label {
+    font-size: 1.4rem;
+  }
+  .address__image img {
+    transform: translate(14px, 50px);
+  }
+}

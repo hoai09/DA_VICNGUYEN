@@ -15,7 +15,7 @@ a {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
 }
 :root {
   --text-color-primary: #1f2024;
@@ -24,6 +24,9 @@ body {
   --header-padding-y: 3rem;
 }
 
+.pb-9 {
+  padding-bottom: 9rem;
+}
 /* ============== SPLASH SCREEN= ================= */
 .splash {
   width: 100vw;
@@ -90,7 +93,7 @@ body {
   background-color: #fff;
 }
 .splash__social-icon {
-  color: #333;
+  color: var(--text-color-primary);
   font-size: 2rem;
 }
 .splash__footer {
@@ -180,6 +183,7 @@ body {
 .main-gallery {
   background-color: #fff;
   max-width: 100%;
+  padding-bottom: 9rem !important;
 }
 
 .gallery__item {
@@ -229,7 +233,6 @@ body {
   max-width: 100%;
   min-height: 10.9rem;
   background-color: #ffffff;
-  border-top: 0.1rem solid #eee;
 }
 
 .main-footer__copyright {
@@ -275,6 +278,9 @@ body {
 /* ============== PROJECT INTRO ================= */
 .project-intro {
   padding-top: 3rem;
+}
+.prj__bt {
+  padding-bottom: 9rem !important;
 }
 
 .info-block {
@@ -592,7 +598,6 @@ body {
 /* ========chitiettintuc============= */
 .single-news-page {
   padding-top: 5rem !important;
-  padding-bottom: 8rem !important;
 }
 
 .single-news__header {
@@ -743,7 +748,9 @@ body {
   font-family: "lato";
   font-weight: 700;
   border-radius: 10%;
-  border: #d4d6dd solid 1px;
+  outline: none;
+  padding: 0.3rem 1.5rem;
+  border: none;
 }
 .btn_frm_stock_info:hover {
   background-color: #e84402;
